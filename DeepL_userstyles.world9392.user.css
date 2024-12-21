@@ -1,0 +1,635 @@
+/* ==UserStyle==
+@name         DeepL
+@version      0.4.0
+@namespace    userstyles.world/user/tidy-easy-stockade
+@description  Dark theme for DeepL
+@author       tidy-easy-stockade
+@license      Copyleft
+@preprocessor stylus
+
+@var color baseColor "Base Theme Color" #916506
+@var color accentColor "Accent Theme Color" #4902ea
+==/UserStyle== */
+@-moz-document domain("deepl.com") {
+	/**
+	* Config 
+	**/
+	:root {
+		--accent: accentColor;
+		--accent-darken: lighten(accentColor, 30%);
+		--accent-5: lighten(accentColor, 5%);
+		--accent-10: lighten(accentColor, 10%);
+		--accent-20: lighten(accentColor, 20%);
+		--accent-30: lighten(accentColor, 30%);
+		--accent-40: lighten(accentColor, 40%);
+		--accent-50: lighten(accentColor, 50%);
+		--accent-60: lighten(accentColor, 60%);
+		--accent-70: lighten(accentColor, 70%);
+		--accent-80: lighten(accentColor, 80%);
+		--accent-90: lighten(accentColor, 90%);
+		--accent-100: lighten(accentColor, 100%);
+		
+		if dark(baseColor) {
+			--base-0: lighten(baseColor, 0%);
+			--base-5: lighten(baseColor, 5%);
+			--base-10: lighten(baseColor, 10%);
+			--base-20: lighten(baseColor, 20%);
+			--base-30: lighten(baseColor, 30%);
+			--base-40: lighten(baseColor, 40%);
+			--base-50: lighten(baseColor, 50%);
+			--base-60: lighten(baseColor, 60%);
+			--base-70: lighten(baseColor, 70%);
+			--base-80: lighten(baseColor, 80%);
+			--base-90: lighten(baseColor, 90%);
+			--base-100: lighten(baseColor, 100%);
+		} else {
+			--base-0: darken(baseColor, 0%);
+			--base-5: darken(baseColor, 5%);
+			--base-10: darken(baseColor, 10%);
+			--base-20: darken(baseColor, 20%);
+			--base-30: darken(baseColor, 30%);
+			--base-40: darken(baseColor, 40%);
+			--base-50: darken(baseColor, 50%);
+			--base-60: darken(baseColor, 60%);
+			--base-70: darken(baseColor, 70%);
+			--base-80: darken(baseColor, 80%);
+			--base-90: darken(baseColor, 90%);
+			--base-100: darken(baseColor, 100%);
+		}
+
+		--background: baseColor;
+		--text-color: var(--base-70);
+	}
+	
+	/**
+	* General
+	**/
+	body,
+ 	.relative.bg-neutral-next-50 {
+		background-color: var(--base-0) !important;
+	}
+	
+	button {
+		color: var(--text-color) !important;
+		
+		&:hover {
+			background-color: var(--base-20) !important;
+		}
+	}
+	
+	.dl_body {
+		&,
+		&--text_page {
+			color: var(--text-color);
+		}
+	}
+	
+	.bg-white {
+		background-color: var(--base-10);
+	}
+	
+	.bg-mosque {
+		background-color: var(--accent) !important;
+	}
+	
+	/**
+	* Header
+	**/
+ 	[class^="BasePageHeader-module--container"] {
+		background-color: var(--base-5);
+		
+		[class^="Logo-module--logoImg"],
+		[class*="LogoLink-module--translatorLink"] {
+			if dark(baseColor) {
+				filter: brightness(0) invert(1);
+			} else {
+				filter: brightness(0) saturate(100%);
+			}
+		}
+		
+		[id^="headlessui-popover-button"] {
+			background-color: var(--base-10);
+
+			a {
+				color: var(--text-color);
+
+				&.bg-highlight,
+				&:hover {
+					background-color: var(--base-20);
+				}
+			}
+
+			+ [id^="headlessui-popover-panel"] {
+				.text-neutral-700 {
+					color: var(--text-color);
+				}
+
+				.text-neutral-900 {
+					color: var(--text-color);
+				}
+
+				.text-dark-3 {
+					color: var(--base-50);
+				}
+
+				a {
+					&:hover {
+						background-color: var(--base-20);
+					}
+				}
+			}
+		}
+		
+		[class^="ProductNavigationLinks-module--container"] {
+			button {
+				padding-right: calc(.2em + 18px);
+				padding-left: .2em;
+				
+				&::after {
+					right: .2em;
+					
+					if dark(baseColor) {
+						filter: brightness(0) invert(1);
+					} else {
+						filter: brightness(0) saturate(100%);
+					}
+				}
+			}
+			
+			a {
+				color: var(--text-color);
+				
+				&:hover {
+					color: var(--base-80) !important;
+					border-color: currentcolor;
+				}
+			}
+		}
+		
+		[class^="AppDownloadButton-module--appDownloadButton"] {
+			background-color: var(--base-20);
+			
+			&:hover {
+				background-color: var(--base-30);
+			}
+		}
+		
+		[class^="ProductUpdateButton-module--updateButton"][aria-expanded="true"] {
+			--path-color: var(--base-80);
+			background-color: var(--base-30);
+		}
+		[class^="ProductUpdatesContainer-module--updateContainer"] {
+			background-color: var(--base-10);			
+			color: var(--text-color);
+			border-color: var(--base-20);
+		}
+		[class^="ProductUpdatesContainer-module--updateList"] {
+			li {
+				&, p, a {
+					color: var(--text-color);
+				}
+				
+				border-color: var(--base-30);
+			}
+		}
+		[class^="ProductUpdateFooter-module--updateFooter"] {
+			background-color: var(--base-10);
+			
+			a {
+				color: var(--text-color);
+			}
+		}
+		
+		[class^="UserMenuNew-module--container"] {
+			button {
+				background-color: var(--base-10);
+				border-color: var(--base-30);
+			}
+			
+			[class^="UserMenuFull-module--menuContent"] {
+				background-color: var(--base-10);
+			}
+		}
+	}
+	
+	/**
+	* Translation Tabs
+	**/
+	#translation-modes-heading + div {
+		button {
+			> div {
+				background-color: var(--base-10);
+				border-color: var(--base-20);
+				
+				svg {
+					if dark(baseColor) {
+						filter: brightness(0) invert(1);
+					} else {
+						filter: brightness(0) saturate(100%);
+					}
+				}
+				
+				> div {
+					div {
+						color: var(--text-color) !important;
+					}
+					
+					+ div {
+						background-color: var(--accent);
+					}
+				}
+			}
+		}
+		
+		/* Deepl Write */
+		a[href="/write"] {
+			div[class^="cardButton"] {
+				background-color: var(--base-10);
+				border-color: var(--base-20);
+				
+				> div {
+					div {
+						color: var(--text-color) !important;
+					}
+					
+					+ div {
+						background-color: var(--accent);
+					}
+				}
+			}
+		}
+	}
+	
+	/**
+	* Translate Panel
+	**/
+	[id^="headlessui-tabs-panel"] {
+		> div > div.border,
+ 		[class*="border"] {
+			border-color: var(--base-20);							
+		}
+		
+		section.rounded-inherit {
+			border-color: var(--base-20);					
+			
+			[class*="TextTranslatorLayout-module--bothareas"] {
+				border-color: var(--base-20);			
+			}	
+		}
+		
+		d-textarea {
+			color: var(--text-color);
+			
+			[data-placeholder] {
+				color: var(--base-50);
+			}
+		}
+		
+		[id^="dictionary-header"] {
+			&, + div {
+				color: var(--text-color);	
+			}		
+		}
+	}
+	
+	.lmt--web .lmt__sides_container {
+		border-color: var(--base-20);
+	}
+	.integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__language_container {
+		background-color: var(--base-10);		
+	}
+	.lmt--web .lmt__language_select > .lmt__language_select__active strong,
+	.lmt__formalitySwitch .lmt__formalitySwitch__toggler,
+	.lmt__glossary_button .lmt__glossary_button_label,
+	.lmt__language_container_switch {
+		color: var(--text-color) !important;
+	}
+	
+	/* Write */
+	#headlessui-listbox-button-8 {
+		background-color: var(--base-10);		
+		
+		+ ul[data-testid="write-language-selector_options"] {
+			background-color: var(--base-10);
+			color: var(--text-color);
+			border: 1px solid var(--base-20);
+			
+			li {
+				color: inherit;
+				
+				&[class*="active"] {
+					background-color: var(--base-20);
+				}
+			}
+		}
+	}
+	#lmt__writeRevisionsUI_container {
+		> div {
+			border-color: var(--base-20);
+			
+			label {
+				--background: var(--base-20);
+				--backgroundHover: var(--base-30);
+				
+				span {
+					color: var(--text-color);
+				}
+				
+				&[class*="selected--"]{
+					--background: var(--accent);
+					--backgroundHover: var(--accent);
+					
+					color: var(--text-color);
+				}
+			}
+		}
+	}
+	/* Write */
+	
+	.lmt__glossaryButton__desktop.switchedOn {
+		border-color: var(--base-20);
+	}
+	.lmt__glossary_onOffSwitch_container {
+		--background: var(--base-20);
+		--backgroundHover: var(--base-30);
+				
+		[class*="selected--"] {
+			--background: var(--accent);
+		}
+		
+		[class*="toggle--"] {
+			&:hover {
+				background-color: var(--base-20) !important;
+			}
+		}
+	}
+	
+	.lmt--active_translation_request.lmt--active_translation_request--with_target_has_content .lmt__side_container--target .lmt__inner_textarea_container {
+		box-shadow: inset 0 0 1px 14px var(--base-10);
+	}
+	
+	.page_loaded .dl_body--translator .lmt__textarea_container,
+	.integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container.lmt__side_container--target .lmt__textarea_container {
+		background-color: var(--base-5);
+		border-color: var(--base-10) !important;
+	}
+	.lmt--web {
+		color: var(--text-color);
+		
+		.lmt__translations_as_text {
+			&::before {
+				border-top-color: var(--base-10) !important;
+			}
+			
+			h4 {
+				color: var(--text-color);
+				
+				&::before {
+					border-top-color: var(--base-30) !important;
+				}
+			}
+		}
+		
+		.lmt__textarea {
+			color: inherit;		
+		
+			&_container {
+				background-color: var(--base-5) !important;
+				border-top-color: var(--base-10) !important;
+				border-right-color: var(--base-10) !important;
+				
+				[class*="#1B4F13"],
+				[class*="highlight--"]{
+					color: var(--accent-20) !important;
+					border-bottom-color: var(--accent-60);
+				}			
+
+				ul {
+					&[aria-labelledby="alternatives-heading"] {
+						li {
+							border-bottom-color: var(--base-30)
+						}
+					}
+				}
+			}
+			
+			&_placeholder_text {
+				color: var(--base-40);
+			}
+		}
+	}
+	.relative.lmt__formalitySwitch {
+		> div {
+			background-color: var(--base-10);
+			border-color: var(--base-20);
+		}
+	}
+	.lmt--showing_alternatives .lmt__translations_as_text::before {
+		border-color: var(--base-20);
+	}
+	
+	.lmt__side_container {		
+		.lmt__language_select__menu {
+			background-color: var(--base-10);
+			border-color: var(--base-20);
+			
+			input[type="text"] {
+				background-color: var(--base-20);
+				padding: .5em 1em;
+			}
+			
+			.lmt__language_select_column {
+				border-right-color: var(--base-20) !important;
+				
+				button {
+					.tick {
+						border-right-color: var(--accent) !important;
+						border-bottom-color: var(--accent) !important;
+					}
+				}
+			}
+		}
+	}
+	
+	#headlessui-listbox-button-3 {
+		background-color: var(--base-20);
+		
+		+ ul {
+			--option-color: var(--text-color);
+			--option-icon-color: var(--accent-30);
+			
+			background-color: var(--base-20);
+			
+			li {
+				&[class*="active"] {
+					background-color: var(--base-30);
+				}
+				
+				&[aria-selected="true"] {
+					color: var(--option-icon-color);
+				}
+			}
+		}
+	}
+	
+	#dictionary-section {
+		#dictionary-header {
+			&,
+			+ div {
+				background-color: var(--base-10);		
+				color: var(--text-color);
+				border-color: var(--base-20);
+			}
+		}
+	}
+	
+	#panelTranslateText {
+		.newPopup {
+			> div {
+				background-color: var(--base-10);		
+				
+				button {
+					&[class*="selected"] {
+						background-color: var(--base-10);		
+					}
+				}
+				
+				hr {
+					color: var(--base-30);		
+				}
+			}
+		}
+	}
+	
+	.content--cY5cJ .tag_type, .content--cY5cJ .tag_wordtype {
+		color: var(--text-color);
+	}
+	.content--cY5cJ .isForeignTerm .tag_lemma, .content--cY5cJ .isForeignTerm .tag_lemma a, .content--cY5cJ .isForeignTerm .tag_s, .content--cY5cJ .isForeignTerm .tag_s a, .content--cY5cJ .isForeignTerm .tag_trans_src_context {
+		color: var(--accent-30)
+	}
+	.content--cY5cJ .isForeignTerm .tag_trans, .content--cY5cJ .isForeignTerm .tag_trans a, .content--cY5cJ .isForeignTerm .tag_t, .content--cY5cJ .isForeignTerm .tag_t a, .content--cY5cJ .isForeignTerm .tag_trans {
+		color: var(--accent-20)
+	}
+	
+	.dl_body--redesign {
+		background-color: var(--base) !important;	
+		
+		> aside {
+			padding: 20px;
+		}
+	}
+	
+	.lmt__using_pro_notification_banner {
+		color: var(--text-color);
+		
+		> div {
+			&:first-of-type {
+				&::before {
+					if dark(baseColor) {
+						filter: brightness(0) invert(1);
+					} else {
+						filter: brightness(0) saturate(100%);
+					}
+				}
+			}
+		}
+	}
+	
+	.dl_top_element--wide {
+		color: var(--text-color);
+		
+		> aside {
+			background-color: var(--base-10);	
+			color: inherit;
+			box-shadow: none;
+			border: 1px solid var(--base-20);
+			
+			#career-banner-heading {
+				color: inherit;
+			}
+			
+			> div {
+				> div {
+					&:last-of-type {
+						a {
+							color: var(--accent-40);
+							border-color: currentcolor;
+							
+							&:hover {
+								color: var(--accent-60);
+								border-color: currentcolor;
+							}
+						}
+					}
+				}
+			}
+		}		
+	}
+	
+	/**
+	* Footer
+	**/
+	
+	[class*="dl_footerV2_container"] {
+		footer {
+			img {
+				if dark(baseColor) {
+					filter: brightness(0) invert(1);
+				} else {
+					filter: brightness(0) saturate(100%);
+				}
+			}
+
+			> div {
+				background-color: var(--base-5) !important;	
+			}
+
+			#languageSelectorIcon {
+				if dark(baseColor) {
+					filter: brightness(0) invert(1);
+				} else {
+					filter: brightness(0) saturate(100%);
+				}
+
+				+ div {
+					--button-background: var(--base-10);
+					--button-border-color: var(--base-20);
+
+					ul {
+						background-color: var(--base-10) !important;	
+
+						li {
+							--option-color: var(--text-color);
+
+							svg {
+								if dark(baseColor) {
+									filter: brightness(0) invert(1);
+								} else {
+									filter: brightness(0) saturate(100%);
+								}
+							}
+						}
+					}
+				}
+			}
+
+			[class*="footerOuterContainer"] {
+				[class*="footerContentContainer"] {
+					nav[class*="linksContainer"] {
+						div[class*="linkList"] {
+							ul {
+								li {
+									&:not(:first-of-type) {
+										a {
+											color: var(--text-color) !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
