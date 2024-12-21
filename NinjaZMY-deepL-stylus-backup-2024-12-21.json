@@ -1,0 +1,317 @@
+[
+  {
+    "settings": {
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
+      "newStyleAsUsercss": false,
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": true,
+      "styleViaASS": false,
+      "styleViaXhr": true,
+      "urlInstaller": true,
+      "windowPosition": {},
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": false,
+      "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": false,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "sublime",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1734754135966,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name         www.deepl.com\n@version      20220213.18.20\n@namespace    userstyles.world/user/electroluxv2\n@description  A dark theme for DeepL.com.\nFull Focus\n@author       electroluxv2\n@license      No License\n==/UserStyle== */\n\n/* ==UserStyle==\n@name           DarkL\n@namespace      https://github.com/ElectroluxV2\n@version        0.2.0\n@description    A Dark theme for DeepL\n@author         Noya, ElectroluxV2\n@homepageURL  \thttps://github.com/ElectroluxV2/DarkL\n@supportURL  \thttps://github.com/ElectroluxV2/DarkL/issues\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": ":root {\n  --color-gray-200: #f1f3f9;\n  color-scheme: dark;\n  --color-white: #111213;\n  --color-text-default: var(--color-gray-200);\n}\n\nbody {\n  filter: invert(1) hue-rotate(190deg);\n}\n\n.dl_body--redesign.dl_top_element--wide {\n  background-color: #FFF !important;\n  color: #000 !important;\n}\n\n.dl_body--redesign {\n  background-color: var(--color-white) !important;\n  color: var(--color-text-default) !important;\n}\n\n#lmt_pro_ad_container,\n#dl_quotes_container,\n#iosAppAdPortal,\n#dl_career_container,\nfooter {\n  display: none !important;\n}\n\nnav:not(:hover) {\n  filter: grayscale(80%) opacity(30%);\n}\n\n#new-menu-container > * {\n  background-color: #FFF !important;\n}\n\n.lmt__edit_text_popup__waiting_indicator,\n.docTrans_document__source_block {\n  color: #000 !important;\n}\n\n#lmt__dict,\n#lmt__dict > *,\nsection,\nsection > *,\nbutton,\n.docTrans_document__source_block,\n.docTrans_document__target_block,\n.lmt__language_container_switch {\n  box-shadow: 0 1px 4px 0 rgb(255 255 255 / 50%) !important;\n}\n\n.lmt__stickyMenubar .dl_header--sticky {\n  position: static !important;\n}\n\n.lmt__textarea_container {\n  background-color: transparent !important;\n}\n\ntextarea {\n  color: #1d1e20 !important;\n}",
+        "start": 597,
+        "domains": [
+          "deepl.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         www.deepl.com\n@version      20220213.18.20\n@namespace    userstyles.world/user/electroluxv2\n@description  A dark theme for DeepL.com.\nFull Focus\n@author       electroluxv2\n@license      No License\n==/UserStyle== */\n\n/* ==UserStyle==\n@name           DarkL\n@namespace      https://github.com/ElectroluxV2\n@version        0.2.0\n@description    A Dark theme for DeepL\n@author         Noya, ElectroluxV2\n@homepageURL  \thttps://github.com/ElectroluxV2/DarkL\n@supportURL  \thttps://github.com/ElectroluxV2/DarkL/issues\n==/UserStyle== */\n\n@-moz-document domain(\"deepl.com\") {\n:root {\n  --color-gray-200: #f1f3f9;\n  color-scheme: dark;\n  --color-white: #111213;\n  --color-text-default: var(--color-gray-200);\n}\n\nbody {\n  filter: invert(1) hue-rotate(190deg);\n}\n\n.dl_body--redesign.dl_top_element--wide {\n  background-color: #FFF !important;\n  color: #000 !important;\n}\n\n.dl_body--redesign {\n  background-color: var(--color-white) !important;\n  color: var(--color-text-default) !important;\n}\n\n#lmt_pro_ad_container,\n#dl_quotes_container,\n#iosAppAdPortal,\n#dl_career_container,\nfooter {\n  display: none !important;\n}\n\nnav:not(:hover) {\n  filter: grayscale(80%) opacity(30%);\n}\n\n#new-menu-container > * {\n  background-color: #FFF !important;\n}\n\n.lmt__edit_text_popup__waiting_indicator,\n.docTrans_document__source_block {\n  color: #000 !important;\n}\n\n#lmt__dict,\n#lmt__dict > *,\nsection,\nsection > *,\nbutton,\n.docTrans_document__source_block,\n.docTrans_document__target_block,\n.lmt__language_container_switch {\n  box-shadow: 0 1px 4px 0 rgb(255 255 255 / 50%) !important;\n}\n\n.lmt__stickyMenubar .dl_header--sticky {\n  position: static !important;\n}\n\n.lmt__textarea_container {\n  background-color: transparent !important;\n}\n\ntextarea {\n  color: #1d1e20 !important;\n}\n}\n",
+    "usercssData": {
+      "name": "www.deepl.com",
+      "version": "20220213.18.20",
+      "namespace": "userstyles.world/user/electroluxv2",
+      "description": "A dark theme for DeepL.com.",
+      "author": "electroluxv2",
+      "license": "No License"
+    },
+    "author": "electroluxv2",
+    "description": "A dark theme for DeepL.com.",
+    "url": "https://github.com/ZykeDev/DarkL",
+    "updateUrl": "https://github.com/ZykeDev/DarkL/raw/main/darkl.user.css",
+    "name": "www.deepl.com",
+    "updateDate": 1734754428519,
+    "_id": "9f426f9e-7057-4729-8f81-9654b289f8f9",
+    "_rev": 1734757223486,
+    "id": 2,
+    "customName": "better darkL",
+    "etag": "W/\"b59639ff459ccde174bd8ceb9909d4a23dc108077bcc52445744c201c6925450\""
+  },
+  {
+    "enabled": true,
+    "installDate": 1734755508246,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name         DeepL\n@version      0.4.0\n@namespace    userstyles.world/user/tidy-easy-stockade\n@description  Dark theme for DeepL\n@author       tidy-easy-stockade\n@license      Copyleft\n@preprocessor stylus\n\n@var color baseColor \"Base Theme Color\" #916506\n@var color accentColor \"Accent Theme Color\" #4902ea\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": ":root {\n    --accent: #4902ea;\n    --accent-darken: #7b41fd;\n    --accent-5: #4d02f8;\n    --accent-10: #550afd;\n    --accent-20: #6826fd;\n    --accent-30: #7b41fd;\n    --accent-40: #8d5cfe;\n    --accent-50: #a077fe;\n    --accent-60: #b392fe;\n    --accent-70: #c6adfe;\n    --accent-80: #d9c9ff;\n    --accent-90: #ece4ff;\n    --accent-100: #fff;\n    --base-0: #916506;\n    --base-5: #a27107;\n    --base-10: #b37d07;\n    --base-20: #d69509;\n    --base-30: #f5ac0e;\n    --base-40: #f6b830;\n    --base-50: #f8c453;\n    --base-60: #f9cf75;\n    --base-70: #fbdb98;\n    --base-80: #fce7ba;\n    --base-90: #fef3dd;\n    --base-100: #fff;\n    --background: #916506;\n    --text-color: var(--base-70);\n  }\n  body,\n  .relative.bg-neutral-next-50 {\n    background-color: var(--base-0) !important;\n  }\n  button {\n    color: var(--text-color) !important;\n  }\n  button:hover {\n    background-color: var(--base-20) !important;\n  }\n  .dl_body,\n  .dl_body--text_page {\n    color: var(--text-color);\n  }\n  .bg-white {\n    background-color: var(--base-10);\n  }\n  .bg-mosque {\n    background-color: var(--accent) !important;\n  }\n  [class^=\"BasePageHeader-module--container\"] {\n    background-color: var(--base-5);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"Logo-module--logoImg\"],\n  [class^=\"BasePageHeader-module--container\"] [class*=\"LogoLink-module--translatorLink\"] {\n    filter: brightness(0) invert(1);\n  }\n  [class^=\"BasePageHeader-module--container\"] [id^=\"headlessui-popover-button\"] {\n    background-color: var(--base-10);\n  }\n  [class^=\"BasePageHeader-module--container\"] [id^=\"headlessui-popover-button\"] a {\n    color: var(--text-color);\n  }\n  [class^=\"BasePageHeader-module--container\"] [id^=\"headlessui-popover-button\"] a.bg-highlight,\n  [class^=\"BasePageHeader-module--container\"] [id^=\"headlessui-popover-button\"] a:hover {\n    background-color: var(--base-20);\n  }\n  [class^=\"BasePageHeader-module--container\"] [id^=\"headlessui-popover-button\"] + [id^=\"headlessui-popover-panel\"] .text-neutral-700 {\n    color: var(--text-color);\n  }\n  [class^=\"BasePageHeader-module--container\"] [id^=\"headlessui-popover-button\"] + [id^=\"headlessui-popover-panel\"] .text-neutral-900 {\n    color: var(--text-color);\n  }\n  [class^=\"BasePageHeader-module--container\"] [id^=\"headlessui-popover-button\"] + [id^=\"headlessui-popover-panel\"] .text-dark-3 {\n    color: var(--base-50);\n  }\n  [class^=\"BasePageHeader-module--container\"] [id^=\"headlessui-popover-button\"] + [id^=\"headlessui-popover-panel\"] a:hover {\n    background-color: var(--base-20);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductNavigationLinks-module--container\"] button {\n    padding-right: calc(0.2em + 18px);\n    padding-left: 0.2em;\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductNavigationLinks-module--container\"] button::after {\n    right: 0.2em;\n    filter: brightness(0) invert(1);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductNavigationLinks-module--container\"] a {\n    color: var(--text-color);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductNavigationLinks-module--container\"] a:hover {\n    color: var(--base-80) !important;\n    border-color: currentcolor;\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"AppDownloadButton-module--appDownloadButton\"] {\n    background-color: var(--base-20);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"AppDownloadButton-module--appDownloadButton\"]:hover {\n    background-color: var(--base-30);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductUpdateButton-module--updateButton\"][aria-expanded=\"true\"] {\n    --path-color: var(--base-80);\n    background-color: var(--base-30);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductUpdatesContainer-module--updateContainer\"] {\n    background-color: var(--base-10);\n    color: var(--text-color);\n    border-color: var(--base-20);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductUpdatesContainer-module--updateList\"] li {\n    border-color: var(--base-30);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductUpdatesContainer-module--updateList\"] li,\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductUpdatesContainer-module--updateList\"] li p,\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductUpdatesContainer-module--updateList\"] li a {\n    color: var(--text-color);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductUpdateFooter-module--updateFooter\"] {\n    background-color: var(--base-10);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"ProductUpdateFooter-module--updateFooter\"] a {\n    color: var(--text-color);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"UserMenuNew-module--container\"] button {\n    background-color: var(--base-10);\n    border-color: var(--base-30);\n  }\n  [class^=\"BasePageHeader-module--container\"] [class^=\"UserMenuNew-module--container\"] [class^=\"UserMenuFull-module--menuContent\"] {\n    background-color: var(--base-10);\n  }\n  #translation-modes-heading + div button > div {\n    background-color: var(--base-10);\n    border-color: var(--base-20);\n  }\n  #translation-modes-heading + div button > div svg {\n    filter: brightness(0) invert(1);\n  }\n  #translation-modes-heading + div button > div > div div {\n    color: var(--text-color) !important;\n  }\n  #translation-modes-heading + div button > div > div + div {\n    background-color: var(--accent);\n  }\n  #translation-modes-heading + div a[href=\"/write\"] div[class^=\"cardButton\"] {\n    background-color: var(--base-10);\n    border-color: var(--base-20);\n  }\n  #translation-modes-heading + div a[href=\"/write\"] div[class^=\"cardButton\"] > div div {\n    color: var(--text-color) !important;\n  }\n  #translation-modes-heading + div a[href=\"/write\"] div[class^=\"cardButton\"] > div + div {\n    background-color: var(--accent);\n  }\n  [id^=\"headlessui-tabs-panel\"] > div > div.border,\n  [id^=\"headlessui-tabs-panel\"] [class*=\"border\"] {\n    border-color: var(--base-20);\n  }\n  [id^=\"headlessui-tabs-panel\"] section.rounded-inherit {\n    border-color: var(--base-20);\n  }\n  [id^=\"headlessui-tabs-panel\"] section.rounded-inherit [class*=\"TextTranslatorLayout-module--bothareas\"] {\n    border-color: var(--base-20);\n  }\n  [id^=\"headlessui-tabs-panel\"] d-textarea {\n    color: var(--text-color);\n  }\n  [id^=\"headlessui-tabs-panel\"] d-textarea [data-placeholder] {\n    color: var(--base-50);\n  }\n  [id^=\"headlessui-tabs-panel\"] [id^=\"dictionary-header\"],\n  [id^=\"headlessui-tabs-panel\"] [id^=\"dictionary-header\"] + div {\n    color: var(--text-color);\n  }\n  .lmt--web .lmt__sides_container {\n    border-color: var(--base-20);\n  }\n  .integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__language_container {\n    background-color: var(--base-10);\n  }\n  .lmt--web .lmt__language_select > .lmt__language_select__active strong,\n  .lmt__formalitySwitch .lmt__formalitySwitch__toggler,\n  .lmt__glossary_button .lmt__glossary_button_label,\n  .lmt__language_container_switch {\n    color: var(--text-color) !important;\n  }\n  #headlessui-listbox-button-8 {\n    background-color: var(--base-10);\n  }\n  #headlessui-listbox-button-8 + ul[data-testid=\"write-language-selector_options\"] {\n    background-color: var(--base-10);\n    color: var(--text-color);\n    border: 1px solid var(--base-20);\n  }\n  #headlessui-listbox-button-8 + ul[data-testid=\"write-language-selector_options\"] li {\n    color: inherit;\n  }\n  #headlessui-listbox-button-8 + ul[data-testid=\"write-language-selector_options\"] li[class*=\"active\"] {\n    background-color: var(--base-20);\n  }\n  #lmt__writeRevisionsUI_container > div {\n    border-color: var(--base-20);\n  }\n  #lmt__writeRevisionsUI_container > div label {\n    --background: var(--base-20);\n    --backgroundHover: var(--base-30);\n  }\n  #lmt__writeRevisionsUI_container > div label span {\n    color: var(--text-color);\n  }\n  #lmt__writeRevisionsUI_container > div label[class*=\"selected--\"] {\n    --background: var(--accent);\n    --backgroundHover: var(--accent);\n    color: var(--text-color);\n  }\n  .lmt__glossaryButton__desktop.switchedOn {\n    border-color: var(--base-20);\n  }\n  .lmt__glossary_onOffSwitch_container {\n    --background: var(--base-20);\n    --backgroundHover: var(--base-30);\n  }\n  .lmt__glossary_onOffSwitch_container [class*=\"selected--\"] {\n    --background: var(--accent);\n  }\n  .lmt__glossary_onOffSwitch_container [class*=\"toggle--\"]:hover {\n    background-color: var(--base-20) !important;\n  }\n  .lmt--active_translation_request.lmt--active_translation_request--with_target_has_content .lmt__side_container--target .lmt__inner_textarea_container {\n    box-shadow: inset 0 0 1px 14px var(--base-10);\n  }\n  .page_loaded .dl_body--translator .lmt__textarea_container,\n  .integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container.lmt__side_container--target .lmt__textarea_container {\n    background-color: var(--base-5);\n    border-color: var(--base-10) !important;\n  }\n  .lmt--web {\n    color: var(--text-color);\n  }\n  .lmt--web .lmt__translations_as_text::before {\n    border-top-color: var(--base-10) !important;\n  }\n  .lmt--web .lmt__translations_as_text h4 {\n    color: var(--text-color);\n  }\n  .lmt--web .lmt__translations_as_text h4::before {\n    border-top-color: var(--base-30) !important;\n  }\n  .lmt--web .lmt__textarea {\n    color: inherit;\n  }\n  .lmt--web .lmt__textarea_container {\n    background-color: var(--base-5) !important;\n    border-top-color: var(--base-10) !important;\n    border-right-color: var(--base-10) !important;\n  }\n  .lmt--web .lmt__textarea_container [class*=\"#1B4F13\"],\n  .lmt--web .lmt__textarea_container [class*=\"highlight--\"] {\n    color: var(--accent-20) !important;\n    border-bottom-color: var(--accent-60);\n  }\n  .lmt--web .lmt__textarea_container ul[aria-labelledby=\"alternatives-heading\"] li {\n    border-bottom-color: var(--base-30);\n  }\n  .lmt--web .lmt__textarea_placeholder_text {\n    color: var(--base-40);\n  }\n  .relative.lmt__formalitySwitch > div {\n    background-color: var(--base-10);\n    border-color: var(--base-20);\n  }\n  .lmt--showing_alternatives .lmt__translations_as_text::before {\n    border-color: var(--base-20);\n  }\n  .lmt__side_container .lmt__language_select__menu {\n    background-color: var(--base-10);\n    border-color: var(--base-20);\n  }\n  .lmt__side_container .lmt__language_select__menu input[type=\"text\"] {\n    background-color: var(--base-20);\n    padding: 0.5em 1em;\n  }\n  .lmt__side_container .lmt__language_select__menu .lmt__language_select_column {\n    border-right-color: var(--base-20) !important;\n  }\n  .lmt__side_container .lmt__language_select__menu .lmt__language_select_column button .tick {\n    border-right-color: var(--accent) !important;\n    border-bottom-color: var(--accent) !important;\n  }\n  #headlessui-listbox-button-3 {\n    background-color: var(--base-20);\n  }\n  #headlessui-listbox-button-3 + ul {\n    --option-color: var(--text-color);\n    --option-icon-color: var(--accent-30);\n    background-color: var(--base-20);\n  }\n  #headlessui-listbox-button-3 + ul li[class*=\"active\"] {\n    background-color: var(--base-30);\n  }\n  #headlessui-listbox-button-3 + ul li[aria-selected=\"true\"] {\n    color: var(--option-icon-color);\n  }\n  #dictionary-section #dictionary-header,\n  #dictionary-section #dictionary-header + div {\n    background-color: var(--base-10);\n    color: var(--text-color);\n    border-color: var(--base-20);\n  }\n  #panelTranslateText .newPopup > div {\n    background-color: var(--base-10);\n  }\n  #panelTranslateText .newPopup > div button[class*=\"selected\"] {\n    background-color: var(--base-10);\n  }\n  #panelTranslateText .newPopup > div hr {\n    color: var(--base-30);\n  }\n  .content--cY5cJ .tag_type,\n  .content--cY5cJ .tag_wordtype {\n    color: var(--text-color);\n  }\n  .content--cY5cJ .isForeignTerm .tag_lemma,\n  .content--cY5cJ .isForeignTerm .tag_lemma a,\n  .content--cY5cJ .isForeignTerm .tag_s,\n  .content--cY5cJ .isForeignTerm .tag_s a,\n  .content--cY5cJ .isForeignTerm .tag_trans_src_context {\n    color: var(--accent-30);\n  }\n  .content--cY5cJ .isForeignTerm .tag_trans,\n  .content--cY5cJ .isForeignTerm .tag_trans a,\n  .content--cY5cJ .isForeignTerm .tag_t,\n  .content--cY5cJ .isForeignTerm .tag_t a {\n    color: var(--accent-20);\n  }\n  .dl_body--redesign {\n    background-color: var(--base) !important;\n  }\n  .dl_body--redesign > aside {\n    padding: 20px;\n  }\n  .lmt__using_pro_notification_banner {\n    color: var(--text-color);\n  }\n  .lmt__using_pro_notification_banner > div:first-of-type::before {\n    filter: brightness(0) invert(1);\n  }\n  .dl_top_element--wide {\n    color: var(--text-color);\n  }\n  .dl_top_element--wide > aside {\n    background-color: var(--base-10);\n    color: inherit;\n    box-shadow: none;\n    border: 1px solid var(--base-20);\n  }\n  .dl_top_element--wide > aside #career-banner-heading {\n    color: inherit;\n  }\n  .dl_top_element--wide > aside > div > div:last-of-type a {\n    color: var(--accent-40);\n    border-color: currentcolor;\n  }\n  .dl_top_element--wide > aside > div > div:last-of-type a:hover {\n    color: var(--accent-60);\n    border-color: currentcolor;\n  }\n  [class*=\"dl_footerV2_container\"] footer img {\n    filter: brightness(0) invert(1);\n  }\n  [class*=\"dl_footerV2_container\"] footer > div {\n    background-color: var(--base-5) !important;\n  }\n  [class*=\"dl_footerV2_container\"] footer #languageSelectorIcon {\n    filter: brightness(0) invert(1);\n  }\n  [class*=\"dl_footerV2_container\"] footer #languageSelectorIcon + div {\n    --button-background: var(--base-10);\n    --button-border-color: var(--base-20);\n  }\n  [class*=\"dl_footerV2_container\"] footer #languageSelectorIcon + div ul {\n    background-color: var(--base-10) !important;\n  }\n  [class*=\"dl_footerV2_container\"] footer #languageSelectorIcon + div ul li {\n    --option-color: var(--text-color);\n  }\n  [class*=\"dl_footerV2_container\"] footer #languageSelectorIcon + div ul li svg {\n    filter: brightness(0) invert(1);\n  }\n  [class*=\"dl_footerV2_container\"] footer [class*=\"footerOuterContainer\"] [class*=\"footerContentContainer\"] nav[class*=\"linksContainer\"] div[class*=\"linkList\"] ul li:not(:first-of-type) a {\n    color: var(--text-color) !important;\n  }",
+        "start": 379,
+        "domains": [
+          "deepl.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         DeepL\n@version      0.4.0\n@namespace    userstyles.world/user/tidy-easy-stockade\n@description  Dark theme for DeepL\n@author       tidy-easy-stockade\n@license      Copyleft\n@preprocessor stylus\n\n@var color baseColor \"Base Theme Color\" #916506\n@var color accentColor \"Accent Theme Color\" #4902ea\n==/UserStyle== */\n@-moz-document domain(\"deepl.com\") {\n\t/**\n\t* Config \n\t**/\n\t:root {\n\t\t--accent: accentColor;\n\t\t--accent-darken: lighten(accentColor, 30%);\n\t\t--accent-5: lighten(accentColor, 5%);\n\t\t--accent-10: lighten(accentColor, 10%);\n\t\t--accent-20: lighten(accentColor, 20%);\n\t\t--accent-30: lighten(accentColor, 30%);\n\t\t--accent-40: lighten(accentColor, 40%);\n\t\t--accent-50: lighten(accentColor, 50%);\n\t\t--accent-60: lighten(accentColor, 60%);\n\t\t--accent-70: lighten(accentColor, 70%);\n\t\t--accent-80: lighten(accentColor, 80%);\n\t\t--accent-90: lighten(accentColor, 90%);\n\t\t--accent-100: lighten(accentColor, 100%);\n\t\t\n\t\tif dark(baseColor) {\n\t\t\t--base-0: lighten(baseColor, 0%);\n\t\t\t--base-5: lighten(baseColor, 5%);\n\t\t\t--base-10: lighten(baseColor, 10%);\n\t\t\t--base-20: lighten(baseColor, 20%);\n\t\t\t--base-30: lighten(baseColor, 30%);\n\t\t\t--base-40: lighten(baseColor, 40%);\n\t\t\t--base-50: lighten(baseColor, 50%);\n\t\t\t--base-60: lighten(baseColor, 60%);\n\t\t\t--base-70: lighten(baseColor, 70%);\n\t\t\t--base-80: lighten(baseColor, 80%);\n\t\t\t--base-90: lighten(baseColor, 90%);\n\t\t\t--base-100: lighten(baseColor, 100%);\n\t\t} else {\n\t\t\t--base-0: darken(baseColor, 0%);\n\t\t\t--base-5: darken(baseColor, 5%);\n\t\t\t--base-10: darken(baseColor, 10%);\n\t\t\t--base-20: darken(baseColor, 20%);\n\t\t\t--base-30: darken(baseColor, 30%);\n\t\t\t--base-40: darken(baseColor, 40%);\n\t\t\t--base-50: darken(baseColor, 50%);\n\t\t\t--base-60: darken(baseColor, 60%);\n\t\t\t--base-70: darken(baseColor, 70%);\n\t\t\t--base-80: darken(baseColor, 80%);\n\t\t\t--base-90: darken(baseColor, 90%);\n\t\t\t--base-100: darken(baseColor, 100%);\n\t\t}\n\n\t\t--background: baseColor;\n\t\t--text-color: var(--base-70);\n\t}\n\t\n\t/**\n\t* General\n\t**/\n\tbody,\n \t.relative.bg-neutral-next-50 {\n\t\tbackground-color: var(--base-0) !important;\n\t}\n\t\n\tbutton {\n\t\tcolor: var(--text-color) !important;\n\t\t\n\t\t&:hover {\n\t\t\tbackground-color: var(--base-20) !important;\n\t\t}\n\t}\n\t\n\t.dl_body {\n\t\t&,\n\t\t&--text_page {\n\t\t\tcolor: var(--text-color);\n\t\t}\n\t}\n\t\n\t.bg-white {\n\t\tbackground-color: var(--base-10);\n\t}\n\t\n\t.bg-mosque {\n\t\tbackground-color: var(--accent) !important;\n\t}\n\t\n\t/**\n\t* Header\n\t**/\n \t[class^=\"BasePageHeader-module--container\"] {\n\t\tbackground-color: var(--base-5);\n\t\t\n\t\t[class^=\"Logo-module--logoImg\"],\n\t\t[class*=\"LogoLink-module--translatorLink\"] {\n\t\t\tif dark(baseColor) {\n\t\t\t\tfilter: brightness(0) invert(1);\n\t\t\t} else {\n\t\t\t\tfilter: brightness(0) saturate(100%);\n\t\t\t}\n\t\t}\n\t\t\n\t\t[id^=\"headlessui-popover-button\"] {\n\t\t\tbackground-color: var(--base-10);\n\n\t\t\ta {\n\t\t\t\tcolor: var(--text-color);\n\n\t\t\t\t&.bg-highlight,\n\t\t\t\t&:hover {\n\t\t\t\t\tbackground-color: var(--base-20);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t+ [id^=\"headlessui-popover-panel\"] {\n\t\t\t\t.text-neutral-700 {\n\t\t\t\t\tcolor: var(--text-color);\n\t\t\t\t}\n\n\t\t\t\t.text-neutral-900 {\n\t\t\t\t\tcolor: var(--text-color);\n\t\t\t\t}\n\n\t\t\t\t.text-dark-3 {\n\t\t\t\t\tcolor: var(--base-50);\n\t\t\t\t}\n\n\t\t\t\ta {\n\t\t\t\t\t&:hover {\n\t\t\t\t\t\tbackground-color: var(--base-20);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t\n\t\t[class^=\"ProductNavigationLinks-module--container\"] {\n\t\t\tbutton {\n\t\t\t\tpadding-right: calc(.2em + 18px);\n\t\t\t\tpadding-left: .2em;\n\t\t\t\t\n\t\t\t\t&::after {\n\t\t\t\t\tright: .2em;\n\t\t\t\t\t\n\t\t\t\t\tif dark(baseColor) {\n\t\t\t\t\t\tfilter: brightness(0) invert(1);\n\t\t\t\t\t} else {\n\t\t\t\t\t\tfilter: brightness(0) saturate(100%);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\ta {\n\t\t\t\tcolor: var(--text-color);\n\t\t\t\t\n\t\t\t\t&:hover {\n\t\t\t\t\tcolor: var(--base-80) !important;\n\t\t\t\t\tborder-color: currentcolor;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t\n\t\t[class^=\"AppDownloadButton-module--appDownloadButton\"] {\n\t\t\tbackground-color: var(--base-20);\n\t\t\t\n\t\t\t&:hover {\n\t\t\t\tbackground-color: var(--base-30);\n\t\t\t}\n\t\t}\n\t\t\n\t\t[class^=\"ProductUpdateButton-module--updateButton\"][aria-expanded=\"true\"] {\n\t\t\t--path-color: var(--base-80);\n\t\t\tbackground-color: var(--base-30);\n\t\t}\n\t\t[class^=\"ProductUpdatesContainer-module--updateContainer\"] {\n\t\t\tbackground-color: var(--base-10);\t\t\t\n\t\t\tcolor: var(--text-color);\n\t\t\tborder-color: var(--base-20);\n\t\t}\n\t\t[class^=\"ProductUpdatesContainer-module--updateList\"] {\n\t\t\tli {\n\t\t\t\t&, p, a {\n\t\t\t\t\tcolor: var(--text-color);\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\tborder-color: var(--base-30);\n\t\t\t}\n\t\t}\n\t\t[class^=\"ProductUpdateFooter-module--updateFooter\"] {\n\t\t\tbackground-color: var(--base-10);\n\t\t\t\n\t\t\ta {\n\t\t\t\tcolor: var(--text-color);\n\t\t\t}\n\t\t}\n\t\t\n\t\t[class^=\"UserMenuNew-module--container\"] {\n\t\t\tbutton {\n\t\t\t\tbackground-color: var(--base-10);\n\t\t\t\tborder-color: var(--base-30);\n\t\t\t}\n\t\t\t\n\t\t\t[class^=\"UserMenuFull-module--menuContent\"] {\n\t\t\t\tbackground-color: var(--base-10);\n\t\t\t}\n\t\t}\n\t}\n\t\n\t/**\n\t* Translation Tabs\n\t**/\n\t#translation-modes-heading + div {\n\t\tbutton {\n\t\t\t> div {\n\t\t\t\tbackground-color: var(--base-10);\n\t\t\t\tborder-color: var(--base-20);\n\t\t\t\t\n\t\t\t\tsvg {\n\t\t\t\t\tif dark(baseColor) {\n\t\t\t\t\t\tfilter: brightness(0) invert(1);\n\t\t\t\t\t} else {\n\t\t\t\t\t\tfilter: brightness(0) saturate(100%);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t> div {\n\t\t\t\t\tdiv {\n\t\t\t\t\t\tcolor: var(--text-color) !important;\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t\t+ div {\n\t\t\t\t\t\tbackground-color: var(--accent);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t\n\t\t/* Deepl Write */\n\t\ta[href=\"/write\"] {\n\t\t\tdiv[class^=\"cardButton\"] {\n\t\t\t\tbackground-color: var(--base-10);\n\t\t\t\tborder-color: var(--base-20);\n\t\t\t\t\n\t\t\t\t> div {\n\t\t\t\t\tdiv {\n\t\t\t\t\t\tcolor: var(--text-color) !important;\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t\t+ div {\n\t\t\t\t\t\tbackground-color: var(--accent);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t\n\t/**\n\t* Translate Panel\n\t**/\n\t[id^=\"headlessui-tabs-panel\"] {\n\t\t> div > div.border,\n \t\t[class*=\"border\"] {\n\t\t\tborder-color: var(--base-20);\t\t\t\t\t\t\t\n\t\t}\n\t\t\n\t\tsection.rounded-inherit {\n\t\t\tborder-color: var(--base-20);\t\t\t\t\t\n\t\t\t\n\t\t\t[class*=\"TextTranslatorLayout-module--bothareas\"] {\n\t\t\t\tborder-color: var(--base-20);\t\t\t\n\t\t\t}\t\n\t\t}\n\t\t\n\t\td-textarea {\n\t\t\tcolor: var(--text-color);\n\t\t\t\n\t\t\t[data-placeholder] {\n\t\t\t\tcolor: var(--base-50);\n\t\t\t}\n\t\t}\n\t\t\n\t\t[id^=\"dictionary-header\"] {\n\t\t\t&, + div {\n\t\t\t\tcolor: var(--text-color);\t\n\t\t\t}\t\t\n\t\t}\n\t}\n\t\n\t.lmt--web .lmt__sides_container {\n\t\tborder-color: var(--base-20);\n\t}\n\t.integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__language_container {\n\t\tbackground-color: var(--base-10);\t\t\n\t}\n\t.lmt--web .lmt__language_select > .lmt__language_select__active strong,\n\t.lmt__formalitySwitch .lmt__formalitySwitch__toggler,\n\t.lmt__glossary_button .lmt__glossary_button_label,\n\t.lmt__language_container_switch {\n\t\tcolor: var(--text-color) !important;\n\t}\n\t\n\t/* Write */\n\t#headlessui-listbox-button-8 {\n\t\tbackground-color: var(--base-10);\t\t\n\t\t\n\t\t+ ul[data-testid=\"write-language-selector_options\"] {\n\t\t\tbackground-color: var(--base-10);\n\t\t\tcolor: var(--text-color);\n\t\t\tborder: 1px solid var(--base-20);\n\t\t\t\n\t\t\tli {\n\t\t\t\tcolor: inherit;\n\t\t\t\t\n\t\t\t\t&[class*=\"active\"] {\n\t\t\t\t\tbackground-color: var(--base-20);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t#lmt__writeRevisionsUI_container {\n\t\t> div {\n\t\t\tborder-color: var(--base-20);\n\t\t\t\n\t\t\tlabel {\n\t\t\t\t--background: var(--base-20);\n\t\t\t\t--backgroundHover: var(--base-30);\n\t\t\t\t\n\t\t\t\tspan {\n\t\t\t\t\tcolor: var(--text-color);\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t&[class*=\"selected--\"]{\n\t\t\t\t\t--background: var(--accent);\n\t\t\t\t\t--backgroundHover: var(--accent);\n\t\t\t\t\t\n\t\t\t\t\tcolor: var(--text-color);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t/* Write */\n\t\n\t.lmt__glossaryButton__desktop.switchedOn {\n\t\tborder-color: var(--base-20);\n\t}\n\t.lmt__glossary_onOffSwitch_container {\n\t\t--background: var(--base-20);\n\t\t--backgroundHover: var(--base-30);\n\t\t\t\t\n\t\t[class*=\"selected--\"] {\n\t\t\t--background: var(--accent);\n\t\t}\n\t\t\n\t\t[class*=\"toggle--\"] {\n\t\t\t&:hover {\n\t\t\t\tbackground-color: var(--base-20) !important;\n\t\t\t}\n\t\t}\n\t}\n\t\n\t.lmt--active_translation_request.lmt--active_translation_request--with_target_has_content .lmt__side_container--target .lmt__inner_textarea_container {\n\t\tbox-shadow: inset 0 0 1px 14px var(--base-10);\n\t}\n\t\n\t.page_loaded .dl_body--translator .lmt__textarea_container,\n\t.integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container.lmt__side_container--target .lmt__textarea_container {\n\t\tbackground-color: var(--base-5);\n\t\tborder-color: var(--base-10) !important;\n\t}\n\t.lmt--web {\n\t\tcolor: var(--text-color);\n\t\t\n\t\t.lmt__translations_as_text {\n\t\t\t&::before {\n\t\t\t\tborder-top-color: var(--base-10) !important;\n\t\t\t}\n\t\t\t\n\t\t\th4 {\n\t\t\t\tcolor: var(--text-color);\n\t\t\t\t\n\t\t\t\t&::before {\n\t\t\t\t\tborder-top-color: var(--base-30) !important;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t\n\t\t.lmt__textarea {\n\t\t\tcolor: inherit;\t\t\n\t\t\n\t\t\t&_container {\n\t\t\t\tbackground-color: var(--base-5) !important;\n\t\t\t\tborder-top-color: var(--base-10) !important;\n\t\t\t\tborder-right-color: var(--base-10) !important;\n\t\t\t\t\n\t\t\t\t[class*=\"#1B4F13\"],\n\t\t\t\t[class*=\"highlight--\"]{\n\t\t\t\t\tcolor: var(--accent-20) !important;\n\t\t\t\t\tborder-bottom-color: var(--accent-60);\n\t\t\t\t}\t\t\t\n\n\t\t\t\tul {\n\t\t\t\t\t&[aria-labelledby=\"alternatives-heading\"] {\n\t\t\t\t\t\tli {\n\t\t\t\t\t\t\tborder-bottom-color: var(--base-30)\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\t&_placeholder_text {\n\t\t\t\tcolor: var(--base-40);\n\t\t\t}\n\t\t}\n\t}\n\t.relative.lmt__formalitySwitch {\n\t\t> div {\n\t\t\tbackground-color: var(--base-10);\n\t\t\tborder-color: var(--base-20);\n\t\t}\n\t}\n\t.lmt--showing_alternatives .lmt__translations_as_text::before {\n\t\tborder-color: var(--base-20);\n\t}\n\t\n\t.lmt__side_container {\t\t\n\t\t.lmt__language_select__menu {\n\t\t\tbackground-color: var(--base-10);\n\t\t\tborder-color: var(--base-20);\n\t\t\t\n\t\t\tinput[type=\"text\"] {\n\t\t\t\tbackground-color: var(--base-20);\n\t\t\t\tpadding: .5em 1em;\n\t\t\t}\n\t\t\t\n\t\t\t.lmt__language_select_column {\n\t\t\t\tborder-right-color: var(--base-20) !important;\n\t\t\t\t\n\t\t\t\tbutton {\n\t\t\t\t\t.tick {\n\t\t\t\t\t\tborder-right-color: var(--accent) !important;\n\t\t\t\t\t\tborder-bottom-color: var(--accent) !important;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t\n\t#headlessui-listbox-button-3 {\n\t\tbackground-color: var(--base-20);\n\t\t\n\t\t+ ul {\n\t\t\t--option-color: var(--text-color);\n\t\t\t--option-icon-color: var(--accent-30);\n\t\t\t\n\t\t\tbackground-color: var(--base-20);\n\t\t\t\n\t\t\tli {\n\t\t\t\t&[class*=\"active\"] {\n\t\t\t\t\tbackground-color: var(--base-30);\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t&[aria-selected=\"true\"] {\n\t\t\t\t\tcolor: var(--option-icon-color);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t\n\t#dictionary-section {\n\t\t#dictionary-header {\n\t\t\t&,\n\t\t\t+ div {\n\t\t\t\tbackground-color: var(--base-10);\t\t\n\t\t\t\tcolor: var(--text-color);\n\t\t\t\tborder-color: var(--base-20);\n\t\t\t}\n\t\t}\n\t}\n\t\n\t#panelTranslateText {\n\t\t.newPopup {\n\t\t\t> div {\n\t\t\t\tbackground-color: var(--base-10);\t\t\n\t\t\t\t\n\t\t\t\tbutton {\n\t\t\t\t\t&[class*=\"selected\"] {\n\t\t\t\t\t\tbackground-color: var(--base-10);\t\t\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\thr {\n\t\t\t\t\tcolor: var(--base-30);\t\t\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t\n\t.content--cY5cJ .tag_type, .content--cY5cJ .tag_wordtype {\n\t\tcolor: var(--text-color);\n\t}\n\t.content--cY5cJ .isForeignTerm .tag_lemma, .content--cY5cJ .isForeignTerm .tag_lemma a, .content--cY5cJ .isForeignTerm .tag_s, .content--cY5cJ .isForeignTerm .tag_s a, .content--cY5cJ .isForeignTerm .tag_trans_src_context {\n\t\tcolor: var(--accent-30)\n\t}\n\t.content--cY5cJ .isForeignTerm .tag_trans, .content--cY5cJ .isForeignTerm .tag_trans a, .content--cY5cJ .isForeignTerm .tag_t, .content--cY5cJ .isForeignTerm .tag_t a, .content--cY5cJ .isForeignTerm .tag_trans {\n\t\tcolor: var(--accent-20)\n\t}\n\t\n\t.dl_body--redesign {\n\t\tbackground-color: var(--base) !important;\t\n\t\t\n\t\t> aside {\n\t\t\tpadding: 20px;\n\t\t}\n\t}\n\t\n\t.lmt__using_pro_notification_banner {\n\t\tcolor: var(--text-color);\n\t\t\n\t\t> div {\n\t\t\t&:first-of-type {\n\t\t\t\t&::before {\n\t\t\t\t\tif dark(baseColor) {\n\t\t\t\t\t\tfilter: brightness(0) invert(1);\n\t\t\t\t\t} else {\n\t\t\t\t\t\tfilter: brightness(0) saturate(100%);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t\n\t.dl_top_element--wide {\n\t\tcolor: var(--text-color);\n\t\t\n\t\t> aside {\n\t\t\tbackground-color: var(--base-10);\t\n\t\t\tcolor: inherit;\n\t\t\tbox-shadow: none;\n\t\t\tborder: 1px solid var(--base-20);\n\t\t\t\n\t\t\t#career-banner-heading {\n\t\t\t\tcolor: inherit;\n\t\t\t}\n\t\t\t\n\t\t\t> div {\n\t\t\t\t> div {\n\t\t\t\t\t&:last-of-type {\n\t\t\t\t\t\ta {\n\t\t\t\t\t\t\tcolor: var(--accent-40);\n\t\t\t\t\t\t\tborder-color: currentcolor;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t&:hover {\n\t\t\t\t\t\t\t\tcolor: var(--accent-60);\n\t\t\t\t\t\t\t\tborder-color: currentcolor;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\t\t\n\t}\n\t\n\t/**\n\t* Footer\n\t**/\n\t\n\t[class*=\"dl_footerV2_container\"] {\n\t\tfooter {\n\t\t\timg {\n\t\t\t\tif dark(baseColor) {\n\t\t\t\t\tfilter: brightness(0) invert(1);\n\t\t\t\t} else {\n\t\t\t\t\tfilter: brightness(0) saturate(100%);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t> div {\n\t\t\t\tbackground-color: var(--base-5) !important;\t\n\t\t\t}\n\n\t\t\t#languageSelectorIcon {\n\t\t\t\tif dark(baseColor) {\n\t\t\t\t\tfilter: brightness(0) invert(1);\n\t\t\t\t} else {\n\t\t\t\t\tfilter: brightness(0) saturate(100%);\n\t\t\t\t}\n\n\t\t\t\t+ div {\n\t\t\t\t\t--button-background: var(--base-10);\n\t\t\t\t\t--button-border-color: var(--base-20);\n\n\t\t\t\t\tul {\n\t\t\t\t\t\tbackground-color: var(--base-10) !important;\t\n\n\t\t\t\t\t\tli {\n\t\t\t\t\t\t\t--option-color: var(--text-color);\n\n\t\t\t\t\t\t\tsvg {\n\t\t\t\t\t\t\t\tif dark(baseColor) {\n\t\t\t\t\t\t\t\t\tfilter: brightness(0) invert(1);\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tfilter: brightness(0) saturate(100%);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t[class*=\"footerOuterContainer\"] {\n\t\t\t\t[class*=\"footerContentContainer\"] {\n\t\t\t\t\tnav[class*=\"linksContainer\"] {\n\t\t\t\t\t\tdiv[class*=\"linkList\"] {\n\t\t\t\t\t\t\tul {\n\t\t\t\t\t\t\t\tli {\n\t\t\t\t\t\t\t\t\t&:not(:first-of-type) {\n\t\t\t\t\t\t\t\t\t\ta {\n\t\t\t\t\t\t\t\t\t\t\tcolor: var(--text-color) !important;\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}",
+    "updateUrl": "https://userstyles.world/api/style/9392.user.css",
+    "usercssData": {
+      "name": "DeepL",
+      "version": "0.4.0",
+      "namespace": "userstyles.world/user/tidy-easy-stockade",
+      "description": "Dark theme for DeepL",
+      "author": "tidy-easy-stockade",
+      "license": "Copyleft",
+      "preprocessor": "stylus",
+      "vars": {
+        "baseColor": {
+          "type": "color",
+          "label": "Base Theme Color",
+          "name": "baseColor",
+          "value": "#916506",
+          "default": "#916506",
+          "options": null
+        },
+        "accentColor": {
+          "type": "color",
+          "label": "Accent Theme Color",
+          "name": "accentColor",
+          "value": "#4902ea",
+          "default": "#4902ea",
+          "options": null
+        }
+      }
+    },
+    "author": "tidy-easy-stockade",
+    "description": "Dark theme for DeepL",
+    "name": "DeepL",
+    "originalDigest": "5586c068091ce1a870ffe7f0e3f73e65f269c085",
+    "_id": "08654e85-ebad-4e74-bd30-0a94537195a6",
+    "_rev": 1734757213095,
+    "id": 8,
+    "url": "https://userstyles.world/style/9392",
+    "installationUrl": "https://userstyles.world/style/9392",
+    "customName": "works with config DeepL",
+    "updateDate": 1734756661717,
+    "updatable": false
+  },
+  {
+    "enabled": true,
+    "installDate": 1734755542461,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name           www.deepl.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Inverts colours to make a dark website style \n@author         iSkile\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": ".default {\n    filter: invert(0.9);\n    background: #f5f5f5;\n  }",
+        "start": 253,
+        "domains": [
+          "deepl.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           www.deepl.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    Inverts colours to make a dark website style \n@author         iSkile\n==/UserStyle== */\n@-moz-document domain(\"deepl.com\") {\n  .default {\n    filter: invert(0.9);\n    background: #f5f5f5;\n  }\n}",
+    "updateUrl": "https://userstyles.world/api/style/19704.user.css",
+    "usercssData": {
+      "name": "www.deepl.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "Inverts colours to make a dark website style",
+      "author": "iSkile"
+    },
+    "author": "iSkile",
+    "description": "Inverts colours to make a dark website style",
+    "name": "www.deepl.com",
+    "originalDigest": "d5d4f530da0213bee13c98f4e517a13e32be2dde",
+    "_id": "53d2a7d6-978a-4770-bfbb-a9e8a47142cf",
+    "_rev": 1734757216974,
+    "id": 13,
+    "url": "https://userstyles.world/style/19704",
+    "installationUrl": "https://userstyles.world/style/19704"
+  },
+  {
+    "enabled": true,
+    "installDate": 1734755554362,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name         Deepl - Clean and Dark\n@namespace    USO Archive\n@author       Kevin Dagutat\n@description  Enjoy deepl.com in a eye friendly  clean and dark style!\n@version      20220104.01.41\n@license      CC0-1.0\n@preprocessor uso\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": "* {\n            background-color: #0e1017 !important;\n            color: #C2ECFF !important;\n            transition: unset !important;\n        }\n        .lmt__target_textarea, .lmt__inner_textarea_container, .lmt__translations_as_text__header, .lmt__textarea_dummydiv {\n            background: transparent !important;\n        }\n\n\n        /* width */\n        ::-webkit-scrollbar {\n          width: 0.5vw;\n        }\n\n        /* Track */\n        ::-webkit-scrollbar-track {\n          background: #0e1017;\n        }\n\n        /* Handle */\n        ::-webkit-scrollbar-thumb {\n          border-radius: 6px;\n          background: #43ADFC;\n        }\n\n        /* Handle on hover */\n        ::-webkit-scrollbar-thumb:hover {\n          background: #286999;\n        }\n\n        path {\n            fill: #0e1017;\n        }\n\n\n        header {\n            display: none !important;\n        }\n        footer {\n            display: none !important;\n        }\n\n        .dl_ad_pro_container {\n            display: none !important;\n        }\n        #lmt_quotes_article {\n            display: none !important;\n        }\n        .eSEOtericText {\n            display: none !important;\n        }\n        .lmt__translations_as_text {\n            display: flex !important;\n        }",
+        "start": 316,
+        "urlPrefixes": [
+          "https://www.deepl.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         Deepl - Clean and Dark\n@namespace    USO Archive\n@author       Kevin Dagutat\n@description  Enjoy deepl.com in a eye friendly  clean and dark style!\n@version      20220104.01.41\n@license      CC0-1.0\n@preprocessor uso\n==/UserStyle== */\n@-moz-document url-prefix(https://www.deepl.com) {\n        * {\n            background-color: #0e1017 !important;\n            color: #C2ECFF !important;\n            transition: unset !important;\n        }\n        .lmt__target_textarea, .lmt__inner_textarea_container, .lmt__translations_as_text__header, .lmt__textarea_dummydiv {\n            background: transparent !important;\n        }\n\n\n        /* width */\n        ::-webkit-scrollbar {\n          width: 0.5vw;\n        }\n\n        /* Track */\n        ::-webkit-scrollbar-track {\n          background: #0e1017;\n        }\n\n        /* Handle */\n        ::-webkit-scrollbar-thumb {\n          border-radius: 6px;\n          background: #43ADFC;\n        }\n\n        /* Handle on hover */\n        ::-webkit-scrollbar-thumb:hover {\n          background: #286999;\n        }\n\n        path {\n            fill: #0e1017;\n        }\n\n\n        header {\n            display: none !important;\n        }\n        footer {\n            display: none !important;\n        }\n\n        .dl_ad_pro_container {\n            display: none !important;\n        }\n        #lmt_quotes_article {\n            display: none !important;\n        }\n        .eSEOtericText {\n            display: none !important;\n        }\n        .lmt__translations_as_text {\n            display: flex !important;\n        }\n}",
+    "updateUrl": "https://cdn.jsdelivr.net/gh/uso-archive/data@flomaster/data/usercss/224701.user.css",
+    "usercssData": {
+      "name": "Deepl - Clean and Dark",
+      "namespace": "USO Archive",
+      "author": "Kevin Dagutat",
+      "description": "Enjoy deepl.com in a eye friendly  clean and dark style!",
+      "version": "20220104.01.41",
+      "license": "CC0-1.0",
+      "preprocessor": "uso"
+    },
+    "author": "Kevin Dagutat",
+    "description": "Enjoy deepl.com in a eye friendly  clean and dark style!",
+    "name": "Deepl - Clean and Dark",
+    "originalDigest": "14f1d8dd2b6e286f2f5d89c1c1757bb201261a7d",
+    "_id": "39e1f4fb-8815-4658-b6ba-a1fbcde84e90",
+    "_rev": 1734757222238,
+    "id": 17,
+    "updateDate": 1734756097919,
+    "url": "https://uso.kkx.one/style/224701",
+    "installationUrl": "https://uso.kkx.one/style/224701"
+  },
+  {
+    "enabled": true,
+    "installDate": 1734755570928,
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name         deepl Dark\n@namespace    USO Archive\n@author       Skailord21\n@description  123\n@version      20241014.20.10\n@license      NONE\n@preprocessor uso\n==/UserStyle== */",
+        "start": 0
+      },
+      {
+        "code": ":root {\n        color-scheme: dark;\n        --color-accent: rgb(18, 143, 231);\n        --color-accent-light: rgb(33, 154, 233);\n        --color-accent-alternate: rgb(137, 234, 80);\n        --color-dark: rgb(80, 80, 80);\n        --color-darker: rgb(60, 60, 60);\n        --color-darkest: rgb(30, 30, 30);\n        --color-light: rgb(210, 210, 210);\n        --color-lighter: rgb(240, 240, 240);\n        --color-lightest: rgb(250, 250, 250);\n        --color-medium: rgb(120, 120, 120);\n    }\n\n    svg,\n    svg path {\n        stroke: var(--color-accent) !important;\n    }\n\n    html {\n        background: var(--color-darker) !important;\n    }\n\n    html:not(.lmt_df-1641_increase_mobile_breakpoint) .lmt__dict .lmt__dict__inner,\n    .lmt__dict__inner * {\n        background: var(--color-darker) !important;\n        color: var(--color-light) !important;\n    }\n\n    header *,\n    header::before,\n    .lmt__language_container,\n    .dl_body--redesign .lmt--web .lmt__textarea_container {\n        background: var(--color-darker) !important;\n        color: var(--color-light) !important;\n        border-color: var(--color-darker) !important;\n    }\n\n\n    .dl_translator_page_container {\n        background: var(--color-darkest);\n    }\n\n    .lmt__language_select__active__title,\n    .lmt__language_select__active__title a {\n        color: var(--color-light) !important;\n    }\n\n    .dl_pro__banner--featureWrapper *,\n    .dl_app_ad *,\n    .dl_top_element *,\n    .dl_top_element--wide *,\n    .dl_header *,\n    .integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container--target .lmt__language_container_switch,\n    .lmt__textarea_separator,\n    .lmt__textarea_separator__vertical_line {\n        background: var(--color-darker) !important;\n    }\n\n    .lmt__docTrans-tab-container,\n    .switch_module_switch__559c384a,\n    .switch_module_size_medium__559c384a {\n        background: rgba(0, 0, 0, 0);\n    }\n\n    .lmt__language_select__menu {\n        color: var(--color-light) !important;\n    }\n\n\n    .lmt__translations_as_text__item *,\n    .lmt__language_select__menu * {\n        color: var(--color-light) !important;\n    }\n\n    .integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container--target .lmt__language_container_switch,\n    .lmt__textarea_container--text_too_long {\n        border-color: var(--color-medium) !important;\n    }\n\n    button strong {\n        color: var(--color-accent-light) !important;\n    }\n\n    .lmt__language_select__menu button:hover {\n        background-color: var(--color-dark) !important;\n    }\n\n    textarea {\n        color: var(--color-light) !important;\n        border: none !important;\n        background: var(--color-darkst) !important;\n    }",
+        "start": 231,
+        "domains": [
+          "deepl.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         deepl Dark\n@namespace    USO Archive\n@author       Skailord21\n@description  123\n@version      20241014.20.10\n@license      NONE\n@preprocessor uso\n==/UserStyle== */\n@-moz-document domain(\"deepl.com\") {\n:root {\n        color-scheme: dark;\n        --color-accent: rgb(18, 143, 231);\n        --color-accent-light: rgb(33, 154, 233);\n        --color-accent-alternate: rgb(137, 234, 80);\n        --color-dark: rgb(80, 80, 80);\n        --color-darker: rgb(60, 60, 60);\n        --color-darkest: rgb(30, 30, 30);\n        --color-light: rgb(210, 210, 210);\n        --color-lighter: rgb(240, 240, 240);\n        --color-lightest: rgb(250, 250, 250);\n        --color-medium: rgb(120, 120, 120);\n    }\n\n    svg,\n    svg path {\n        stroke: var(--color-accent) !important;\n    }\n\n    html {\n        background: var(--color-darker) !important;\n    }\n\n    html:not(.lmt_df-1641_increase_mobile_breakpoint) .lmt__dict .lmt__dict__inner,\n    .lmt__dict__inner * {\n        background: var(--color-darker) !important;\n        color: var(--color-light) !important;\n    }\n\n    header *,\n    header::before,\n    .lmt__language_container,\n    .dl_body--redesign .lmt--web .lmt__textarea_container {\n        background: var(--color-darker) !important;\n        color: var(--color-light) !important;\n        border-color: var(--color-darker) !important;\n    }\n\n\n    .dl_translator_page_container {\n        background: var(--color-darkest);\n    }\n\n    .lmt__language_select__active__title,\n    .lmt__language_select__active__title a {\n        color: var(--color-light) !important;\n    }\n\n    .dl_pro__banner--featureWrapper *,\n    .dl_app_ad *,\n    .dl_top_element *,\n    .dl_top_element--wide *,\n    .dl_header *,\n    .integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container--target .lmt__language_container_switch,\n    .lmt__textarea_separator,\n    .lmt__textarea_separator__vertical_line {\n        background: var(--color-darker) !important;\n    }\n\n    .lmt__docTrans-tab-container,\n    .switch_module_switch__559c384a,\n    .switch_module_size_medium__559c384a {\n        background: rgba(0, 0, 0, 0);\n    }\n\n    .lmt__language_select__menu {\n        color: var(--color-light) !important;\n    }\n\n\n    .lmt__translations_as_text__item *,\n    .lmt__language_select__menu * {\n        color: var(--color-light) !important;\n    }\n\n    .integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container--target .lmt__language_container_switch,\n    .lmt__textarea_container--text_too_long {\n        border-color: var(--color-medium) !important;\n    }\n\n    button strong {\n        color: var(--color-accent-light) !important;\n    }\n\n    .lmt__language_select__menu button:hover {\n        background-color: var(--color-dark) !important;\n    }\n\n    textarea {\n        color: var(--color-light) !important;\n        border: none !important;\n        background: var(--color-darkst) !important;\n    }\n}\n",
+    "updateUrl": "https://cdn.jsdelivr.net/gh/uso-archive/data@flomaster/data/usercss/276428.user.css",
+    "usercssData": {
+      "name": "deepl Dark",
+      "namespace": "USO Archive",
+      "author": "Skailord21",
+      "description": "123",
+      "version": "20241014.20.10",
+      "license": "NONE",
+      "preprocessor": "uso"
+    },
+    "author": "Skailord21",
+    "description": "123",
+    "name": "deepl Dark",
+    "originalDigest": "47602e5b015c1f0219fd00b6298c2016966c8bd3",
+    "_id": "9604fe91-0557-4bf3-96bf-2c8c4f04b4e8",
+    "_rev": 1734757221590,
+    "id": 22,
+    "url": "https://uso.kkx.one/style/276428",
+    "installationUrl": "https://uso.kkx.one/style/276428",
+    "customName": "edit me2 deepL",
+    "updateDate": 1734756021636
+  }
+]
